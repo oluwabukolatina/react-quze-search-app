@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52dd37a909e0ebdb2fc61d377d227463",
+    "revision": "ec893d1759c2d3dfaadd1f14297ece28",
     "url": "/react-quze-search-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-quze-search-app/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "ddce158d1b6e01e52bc8",
+    "revision": "696b061e26e9bf1ca2eb",
     "url": "/react-quze-search-app/static/css/main.55065afd.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-quze-search-app/static/js/2.a4225be4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ddce158d1b6e01e52bc8",
-    "url": "/react-quze-search-app/static/js/main.9717e989.chunk.js"
+    "revision": "696b061e26e9bf1ca2eb",
+    "url": "/react-quze-search-app/static/js/main.b19c1d5e.chunk.js"
   },
   {
     "revision": "6839b1dcbf75ed23bcaf",

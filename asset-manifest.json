@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-quze-search-app/static/css/main.55065afd.chunk.css",
-    "main.js": "/react-quze-search-app/static/js/main.9717e989.chunk.js",
-    "main.js.map": "/react-quze-search-app/static/js/main.9717e989.chunk.js.map",
+    "main.js": "/react-quze-search-app/static/js/main.b19c1d5e.chunk.js",
+    "main.js.map": "/react-quze-search-app/static/js/main.b19c1d5e.chunk.js.map",
     "runtime-main.js": "/react-quze-search-app/static/js/runtime-main.3324e855.js",
     "runtime-main.js.map": "/react-quze-search-app/static/js/runtime-main.3324e855.js.map",
     "static/css/2.de424728.chunk.css": "/react-quze-search-app/static/css/2.de424728.chunk.css",
     "static/js/2.a4225be4.chunk.js": "/react-quze-search-app/static/js/2.a4225be4.chunk.js",
     "static/js/2.a4225be4.chunk.js.map": "/react-quze-search-app/static/js/2.a4225be4.chunk.js.map",
     "index.html": "/react-quze-search-app/index.html",
-    "precache-manifest.ecc56b0587038e7900639b993d184ca6.js": "/react-quze-search-app/precache-manifest.ecc56b0587038e7900639b993d184ca6.js",
+    "precache-manifest.e4d846571b846421b4bdc00e11ca5782.js": "/react-quze-search-app/precache-manifest.e4d846571b846421b4bdc00e11ca5782.js",
     "service-worker.js": "/react-quze-search-app/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/react-quze-search-app/static/css/2.de424728.chunk.css.map",
     "static/css/main.55065afd.chunk.css.map": "/react-quze-search-app/static/css/main.55065afd.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.a4225be4.chunk.js",
     "static/css/main.55065afd.chunk.css",
-    "static/js/main.9717e989.chunk.js"
+    "static/js/main.b19c1d5e.chunk.js"
   ]
 }

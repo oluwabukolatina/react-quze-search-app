@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-quze-search-app/precache-manifest.ecc56b0587038e7900639b993d184ca6.js"
+  "/react-quze-search-app/precache-manifest.e4d846571b846421b4bdc00e11ca5782.js"
 );
 
 self.addEventListener('message', (event) => {
