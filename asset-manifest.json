@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/oluwabukolatina.github.io/react-quze-search-app/static/css/main.55065afd.chunk.css",
-    "main.js": "/oluwabukolatina.github.io/react-quze-search-app/static/js/main.121c116b.chunk.js",
-    "main.js.map": "/oluwabukolatina.github.io/react-quze-search-app/static/js/main.121c116b.chunk.js.map",
-    "runtime-main.js": "/oluwabukolatina.github.io/react-quze-search-app/static/js/runtime-main.db1c6a78.js",
-    "runtime-main.js.map": "/oluwabukolatina.github.io/react-quze-search-app/static/js/runtime-main.db1c6a78.js.map",
-    "static/css/2.de424728.chunk.css": "/oluwabukolatina.github.io/react-quze-search-app/static/css/2.de424728.chunk.css",
-    "static/js/2.d797ed0f.chunk.js": "/oluwabukolatina.github.io/react-quze-search-app/static/js/2.d797ed0f.chunk.js",
-    "static/js/2.d797ed0f.chunk.js.map": "/oluwabukolatina.github.io/react-quze-search-app/static/js/2.d797ed0f.chunk.js.map",
-    "index.html": "/oluwabukolatina.github.io/react-quze-search-app/index.html",
-    "precache-manifest.0faa07fe872d0ecc5efaa8921b7347dd.js": "/oluwabukolatina.github.io/react-quze-search-app/precache-manifest.0faa07fe872d0ecc5efaa8921b7347dd.js",
-    "service-worker.js": "/oluwabukolatina.github.io/react-quze-search-app/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/oluwabukolatina.github.io/react-quze-search-app/static/css/2.de424728.chunk.css.map",
-    "static/css/main.55065afd.chunk.css.map": "/oluwabukolatina.github.io/react-quze-search-app/static/css/main.55065afd.chunk.css.map",
-    "static/js/2.d797ed0f.chunk.js.LICENSE.txt": "/oluwabukolatina.github.io/react-quze-search-app/static/js/2.d797ed0f.chunk.js.LICENSE.txt"
+    "main.css": "/react-quze-search-app/static/css/main.55065afd.chunk.css",
+    "main.js": "/react-quze-search-app/static/js/main.9717e989.chunk.js",
+    "main.js.map": "/react-quze-search-app/static/js/main.9717e989.chunk.js.map",
+    "runtime-main.js": "/react-quze-search-app/static/js/runtime-main.3324e855.js",
+    "runtime-main.js.map": "/react-quze-search-app/static/js/runtime-main.3324e855.js.map",
+    "static/css/2.de424728.chunk.css": "/react-quze-search-app/static/css/2.de424728.chunk.css",
+    "static/js/2.a4225be4.chunk.js": "/react-quze-search-app/static/js/2.a4225be4.chunk.js",
+    "static/js/2.a4225be4.chunk.js.map": "/react-quze-search-app/static/js/2.a4225be4.chunk.js.map",
+    "index.html": "/react-quze-search-app/index.html",
+    "precache-manifest.ecc56b0587038e7900639b993d184ca6.js": "/react-quze-search-app/precache-manifest.ecc56b0587038e7900639b993d184ca6.js",
+    "service-worker.js": "/react-quze-search-app/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/react-quze-search-app/static/css/2.de424728.chunk.css.map",
+    "static/css/main.55065afd.chunk.css.map": "/react-quze-search-app/static/css/main.55065afd.chunk.css.map",
+    "static/js/2.a4225be4.chunk.js.LICENSE.txt": "/react-quze-search-app/static/js/2.a4225be4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.db1c6a78.js",
+    "static/js/runtime-main.3324e855.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.d797ed0f.chunk.js",
+    "static/js/2.a4225be4.chunk.js",
     "static/css/main.55065afd.chunk.css",
-    "static/js/main.121c116b.chunk.js"
+    "static/js/main.9717e989.chunk.js"
   ]
 }
