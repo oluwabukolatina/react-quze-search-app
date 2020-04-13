@@ -10,9 +10,6 @@ const useCourses = () => {
     const [provider, setProvider] = useState([]);
     const [level, setLevel] = useState([]);
     const [category, setCategory] = useState([]);
-    // const [authors, setAuthors] = useState([]);
-
-
 
     const getCourses = async () =>{
         try {
@@ -73,33 +70,9 @@ const useCourses = () => {
             setCourses(allCourses.filter(c => c.category === value))
         }
     }
-    // const onChange = (e) => {
-    //     const {value, name} = e.target;
-    //     console.log(name);
-    //     console.log(value);
-    //     switch (name) {
-    //         case "provider":
-    //             setCourses(allCourses.filter(c => c.provider === value))
-    //             break;
-    //         case "level":
-    //             setCourses(allCourses.filter(c => c.level === value))
-    //             break;
-    //         case "author":
-    //             setCourses(allCourses.filter(c => c.author === value))
-    //             break;
-    //         case "category":
-    //             setCourses(allCourses.filter(c => c.category === value));
-    //             break;
-    //         default:
-    //            return null
-    //
-    //     }
-    //     setCourses( allCourses.filter(c => c.level === value))
-    // }
-
 
 
     return {courses, name, searchWithName, onNameChange, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange}
-}
+};
 
 export default useCourses;
