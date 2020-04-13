@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-quze-search-app/static/css/main.55065afd.chunk.css",
+    "main.js": "/react-quze-search-app/static/js/main.728a08a9.chunk.js",
+    "main.js.map": "/react-quze-search-app/static/js/main.728a08a9.chunk.js.map",
+    "runtime-main.js": "/react-quze-search-app/static/js/runtime-main.3324e855.js",
+    "runtime-main.js.map": "/react-quze-search-app/static/js/runtime-main.3324e855.js.map",
+    "static/css/2.de424728.chunk.css": "/react-quze-search-app/static/css/2.de424728.chunk.css",
+    "static/js/2.d797ed0f.chunk.js": "/react-quze-search-app/static/js/2.d797ed0f.chunk.js",
+    "static/js/2.d797ed0f.chunk.js.map": "/react-quze-search-app/static/js/2.d797ed0f.chunk.js.map",
+    "index.html": "/react-quze-search-app/index.html",
+    "precache-manifest.89eba66ee569929ad0054d07b3bfe448.js": "/react-quze-search-app/precache-manifest.89eba66ee569929ad0054d07b3bfe448.js",
+    "service-worker.js": "/react-quze-search-app/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/react-quze-search-app/static/css/2.de424728.chunk.css.map",
+    "static/css/main.55065afd.chunk.css.map": "/react-quze-search-app/static/css/main.55065afd.chunk.css.map",
+    "static/js/2.d797ed0f.chunk.js.LICENSE.txt": "/react-quze-search-app/static/js/2.d797ed0f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3324e855.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.d797ed0f.chunk.js",
+    "static/css/main.55065afd.chunk.css",
+    "static/js/main.728a08a9.chunk.js"
+  ]
+}
