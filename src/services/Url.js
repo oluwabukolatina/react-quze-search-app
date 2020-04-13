@@ -1,0 +1,1 @@
+export const COURSES_URL = 'http://staging-api.quze.co/search/intern-test/_search';

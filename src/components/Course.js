@@ -23,28 +23,28 @@ const Course = ({history}) => {
             <Container>
                 <div className="single-product">
                     <Card>
-                        <Card.Img variant="top" src={single.imgUrl ? single.imgUrl : "https://via.placeholder.com/150"}/>
+                        <Card.Img variant="top" src={single._source.imgUrl ? single._source.imgUrl : "https://via.placeholder.com/150"}/>
                         <hr/>
                         <Card.Body>
-                            <Card.Title>{single.title}</Card.Title>
+                            <Card.Title>{single._source.title}</Card.Title>
                             <hr/>
                             <Card.Text>
 
-                                {single.shortDescription}
+                                {single._source.shortDescription}
                             </Card.Text>
                             <hr/>
                             <div className="product-details">
                                 <Card.Text style={{width: '50%'}}>
-                                    Author: {single.author}
+                                    Author: {single._source.author}
                                 </Card.Text>
                                 <Card.Text style={{width: '50%'}}>
-                                    Level: {single.level}
+                                    Level: {single._source.level}
                                 </Card.Text>
                             </div>
                         </Card.Body>
                         <Card.Footer>
                             <div style={{display: 'flex'}}>
-                                <small style={{width: '50%', textAlign: 'inherit'}} className="text-muted"> Provider: {single.provider}</small>
+                                <small style={{width: '50%', textAlign: 'inherit'}} className="text-muted"> Provider: {single._source.provider}</small>
                             </div>
                         </Card.Footer>
                     </Card>

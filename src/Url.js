@@ -1,1 +1,0 @@
-export const COURSES_URL = 'https://quze-intern-test.s3.us-east-2.amazonaws.com/course-data.json'

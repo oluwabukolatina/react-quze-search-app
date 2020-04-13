@@ -7,30 +7,29 @@ import {Link} from "react-router-dom";
 
 const Courses = () => {
 
-    const {courses, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange} = useContext(AppContext)
-
+    const {courses, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange, loading} = useContext(AppContext)
     const displayCourses = () => {
         if(courses && courses.length){
             return  courses.map(course => (
-                 <div style={{ width: '25%'}} key={course.courseId}>
+                 <div style={{ width: '25%'}} key={course._source.courseId}>
                      <Card style={{marginBottom: '9%'}}>
-                         <Card.Img variant="top" src={course.imgUrl ? course.imgUrl : "https://via.placeholder.com/150"}/>
+                         <Card.Img variant="top" src={course._source.imgUrl ? course._source.imgUrl : "https://via.placeholder.com/150"}/>
                          <Card.Body>
-                             <Card.Title>{course.title}</Card.Title>
+                             <Card.Title>{course._source.title}</Card.Title>
                              <hr/>
                              <Card.Text>
-                                 {libs.truncateWords(course.shortDescription, 20)}
+                                 {libs.truncateWords(course._source.shortDescription, 20)}
                              </Card.Text>
                          </Card.Body>
                          <Card.Footer>
                              <div style={{display: 'flex'}}>
-                             <small style={{width: '50%', textAlign: 'inherit'}} className="text-muted">{course.provider}</small>
+                             <small style={{width: '50%', textAlign: 'inherit'}} className="text-muted">{course._source.provider}</small>
 
                                  <Link  style={{textDecoration: 'none',
                                      color: 'black',
                                  }}
                                         to={{
-                                            pathname: `/course/${course.title.replace(/ /g, '-').toLowerCase()}`,
+                                            pathname: `/course/${course._source.title.replace(/ /g, '-').toLowerCase()}`,
                                             state: {
                                                 course
                                             }
@@ -98,7 +97,7 @@ const Courses = () => {
 
                <div style={{display: 'flex', width: '100%'}}>
                    <CardDeck>
-                       {displayCourses()}
+                       {loading ? <small>loading...</small> : displayCourses()}
                    </CardDeck>
                </div>
            </Container>

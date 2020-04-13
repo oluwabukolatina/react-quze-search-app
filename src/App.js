@@ -7,11 +7,11 @@ import useCourses from "./hooks/useCourses";
 import Course from "./components/Course";
 
 const App = () => {
-    const {courses, searchWithName, name, onNameChange, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange} = useCourses();
+    const {courses, searchWithName, name, onNameChange, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange, loading} = useCourses();
 
     return (
       <Switch>
-          <AppProvider value={{courses, name, searchWithName, onNameChange, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange}}>
+          <AppProvider value={{courses, name, searchWithName, onNameChange, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange, loading}}>
           <Route exact path="/" component={Courses}/>
           <Route exact path="/course/:name" component={Course} />
           </AppProvider>
