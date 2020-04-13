@@ -1,12 +1,12 @@
-import React, {Fragment} from 'react';
-import {CardDeck, Card, Container} from "react-bootstrap";
+import React, {Fragment, useContext} from 'react';
+import {CardDeck, Card, Container, Form} from "react-bootstrap";
 import NavBar from "../layouts/NavBar";
-import useCourses from "../hooks/useCourses";
 import libs from "../utils/libs";
+import AppContext from "../context/AppContext";
 
 const Home = () => {
-    const {courses} = useCourses();
 
+    const {courses} = useContext(AppContext)
     // "courseId": 19,
     //     "title": "Understanding Machine Learning",
     //     "shortDescription": "Hello! My name is David Chappell, and I'm the author of Understanding Machine Learning here at Pluralsight. Have you ever wondered what machine learning is? That’s what this course is designed to teach you. You’ll explore the open source programming language R, learn about training and testing...",
@@ -45,7 +45,7 @@ const Home = () => {
                              <Card.Title>{course.title}</Card.Title>
                              <hr/>
                              <Card.Text>
-                                 {libs.truncateWords(course.shortDescription, 65)}
+                                 {libs.truncateWords(course.shortDescription, 20)}
                              </Card.Text>
                          </Card.Body>
                          <Card.Footer>
@@ -56,12 +56,28 @@ const Home = () => {
              ))
         }
         return null
-    }
+    };
 
     return (
        <Fragment>
            <NavBar/>
            <Container style={{    marginTop: '3%'}}>
+               <Form style={{
+                   marginLeft: '67%',
+                   marginTop: '3%' }}>
+
+                   <Form.Group controlId="exampleForm.SelectCustomSizeLg">
+                       <Form.Label>Select A Movie</Form.Label>
+                       <Form.Control as="select" size="lg" custom
+                                     // onChange={}
+                                     name="title">
+                           <option>Choose</option>
+                           {/*{selectMovies ? selectMovies.map(movie => (*/}
+                               <option value="" id="titleId">Name</option>
+                           {/*)): null}*/}
+                       </Form.Control>
+                   </Form.Group>
+               </Form>
                <div style={{display: 'flex', width: '100%'}}>
                    <CardDeck>
                        {displayCourses()}
