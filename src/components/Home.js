@@ -6,7 +6,7 @@ import AppContext from "../context/AppContext";
 
 const Home = () => {
 
-    const {courses, authors, provider, level, category, levelChange} = useContext(AppContext)
+    const {courses, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange} = useContext(AppContext)
     // "courseId": 19,
     //     "title": "Understanding Machine Learning",
     //     "shortDescription": "Hello! My name is David Chappell, and I'm the author of Understanding Machine Learning here at Pluralsight. Have you ever wondered what machine learning is? That’s what this course is designed to teach you. You’ll explore the open source programming language R, learn about training and testing...",
@@ -67,7 +67,7 @@ const Home = () => {
                        {/*<Form.Group controlId="exampleForm.SelectCustomSizeLg">*/}
                        <Form.Control as="select" size="lg" custom
                                      onChange={levelChange}
-                                     // name="level"
+                                     name="level"
                            // onChange={}
                             >
                            <option value="">Filter By Level</option>
@@ -82,11 +82,12 @@ const Home = () => {
                        {/*<Form.Group controlId="exampleForm.SelectCustomSizeLg">*/}
                        <Form.Control as="select" size="lg" custom
                            // onChange={}
-                                     name="title">
+                                     onChange={categoryChange}
+                                     name="category">
                            {/*{selectMovies ? selectMovies.map(movie => (*/}
                            <option value="">Filter By Category</option>
                            {category ? category.map(a => (
-                               <option value="">{a}</option>
+                               <option value={a}>{a}</option>
                            )) : null}
                            {/*)): null}*/}
                        </Form.Control>
@@ -95,12 +96,12 @@ const Home = () => {
                    <Form style={{width: '25%', padding: '2%'}}>
                        {/*<Form.Group controlId="exampleForm.SelectCustomSizeLg">*/}
                        <Form.Control as="select" size="lg" custom
-                           // onChange={}
-                                     name="title">
+                           onChange={providerChange}
+                                     name="provider">
                            {/*{selectMovies ? selectMovies.map(movie => (*/}
                            <option value="">Filter By Provider</option>
                            {provider ? provider.map(a => (
-                               <option value="">{a}</option>
+                               <option value={a}>{a}</option>
                            )) : null}
                            {/*)): null}*/}
                        </Form.Control>
@@ -109,12 +110,12 @@ const Home = () => {
                    <Form style={{width: '25%', padding: '2%'}}>
                        {/*<Form.Group controlId="exampleForm.SelectCustomSizeLg">*/}
                        <Form.Control as="select" size="lg" custom
-                           // onChange={}
-                                     name="title">
+                           onChange={authorChange}
+                                     name="author">
                            {/*{selectMovies ? selectMovies.map(movie => (*/}
                            <option value="">Filter By Author</option>
                            {authors ? authors.map(a => (
-                               <option value="">{a}</option>
+                               <option value={a}>{a}</option>
                            )) : null}
                            {/*)): null}*/}
                        </Form.Control>

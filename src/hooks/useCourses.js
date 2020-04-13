@@ -46,12 +46,60 @@ const useCourses = () => {
         setName(value)
     };
 
-    const levelChange = (e) => {
+    const providerChange = (e)  => {
         const {value} = e.target;
-        setCourses( allCourses.filter(c => c.level === value))
+        if(value){
+            setCourses(allCourses.filter(c => c.provider === value))
+        }
     }
 
-    return {courses, name, searchWithName, onNameChange, authors, provider, level, category, levelChange}
+    const levelChange = (e)  => {
+        const {value} = e.target;
+        if(value){
+            setCourses(allCourses.filter(c => c.level === value))
+        }
+    }
+
+    const authorChange = (e)  => {
+        const {value} = e.target;
+        if(value){
+            setCourses(allCourses.filter(c => c.author === value))
+        }
+    }
+
+    const categoryChange = (e)  => {
+        const {value} = e.target;
+        if(value){
+            setCourses(allCourses.filter(c => c.category === value))
+        }
+    }
+    // const onChange = (e) => {
+    //     const {value, name} = e.target;
+    //     console.log(name);
+    //     console.log(value);
+    //     switch (name) {
+    //         case "provider":
+    //             setCourses(allCourses.filter(c => c.provider === value))
+    //             break;
+    //         case "level":
+    //             setCourses(allCourses.filter(c => c.level === value))
+    //             break;
+    //         case "author":
+    //             setCourses(allCourses.filter(c => c.author === value))
+    //             break;
+    //         case "category":
+    //             setCourses(allCourses.filter(c => c.category === value));
+    //             break;
+    //         default:
+    //            return null
+    //
+    //     }
+    //     setCourses( allCourses.filter(c => c.level === value))
+    // }
+
+
+
+    return {courses, name, searchWithName, onNameChange, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange}
 }
 
 export default useCourses;

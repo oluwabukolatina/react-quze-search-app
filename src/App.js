@@ -7,11 +7,11 @@ import useCourses from "./hooks/useCourses";
 
 
 const App = () => {
-    const {courses, searchWithName, name, onNameChange, authors, provider, level, category, levelChange} = useCourses();
+    const {courses, searchWithName, name, onNameChange, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange} = useCourses();
 
     return (
       <Switch>
-          <AppProvider value={{courses, name, searchWithName, onNameChange, authors, provider, level, category, levelChange}}>
+          <AppProvider value={{courses, name, searchWithName, onNameChange, authors, provider, level, category, providerChange, levelChange, authorChange, categoryChange}}>
           <Route exact path="/" component={Home}/>
           </AppProvider>
       </Switch>
