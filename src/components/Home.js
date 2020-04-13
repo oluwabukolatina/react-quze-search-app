@@ -6,7 +6,7 @@ import AppContext from "../context/AppContext";
 
 const Home = () => {
 
-    const {courses} = useContext(AppContext)
+    const {courses, authors, provider, level, category, levelChange} = useContext(AppContext)
     // "courseId": 19,
     //     "title": "Understanding Machine Learning",
     //     "shortDescription": "Hello! My name is David Chappell, and I'm the author of Understanding Machine Learning here at Pluralsight. Have you ever wondered what machine learning is? That’s what this course is designed to teach you. You’ll explore the open source programming language R, learn about training and testing...",
@@ -62,22 +62,66 @@ const Home = () => {
        <Fragment>
            <NavBar/>
            <Container style={{    marginTop: '3%'}}>
-               <Form style={{
-                   marginLeft: '67%',
-                   marginTop: '3%' }}>
-
-                   <Form.Group controlId="exampleForm.SelectCustomSizeLg">
-                       <Form.Label>Select A Movie</Form.Label>
+               <div style={{width: '100%', display: 'flex', marginTop: '3%', marginBottom: '3%'}}>
+                   <Form style={{width: '25%', padding: '2%'}}>
+                       {/*<Form.Group controlId="exampleForm.SelectCustomSizeLg">*/}
                        <Form.Control as="select" size="lg" custom
-                                     // onChange={}
-                                     name="title">
-                           <option>Choose</option>
-                           {/*{selectMovies ? selectMovies.map(movie => (*/}
-                               <option value="" id="titleId">Name</option>
+                                     onChange={levelChange}
+                                     // name="level"
+                           // onChange={}
+                            >
+                           <option value="">Filter By Level</option>
+                           {level ? level.map(a => (
+                               <option value={a}>{a}</option>
+                           )) : null}
                            {/*)): null}*/}
                        </Form.Control>
-                   </Form.Group>
-               </Form>
+                       {/*</Form.Group>*/}
+                   </Form>
+                   <Form style={{width: '25%', padding: '2%'}}>
+                       {/*<Form.Group controlId="exampleForm.SelectCustomSizeLg">*/}
+                       <Form.Control as="select" size="lg" custom
+                           // onChange={}
+                                     name="title">
+                           {/*{selectMovies ? selectMovies.map(movie => (*/}
+                           <option value="">Filter By Category</option>
+                           {category ? category.map(a => (
+                               <option value="">{a}</option>
+                           )) : null}
+                           {/*)): null}*/}
+                       </Form.Control>
+                       {/*</Form.Group>*/}
+                   </Form>
+                   <Form style={{width: '25%', padding: '2%'}}>
+                       {/*<Form.Group controlId="exampleForm.SelectCustomSizeLg">*/}
+                       <Form.Control as="select" size="lg" custom
+                           // onChange={}
+                                     name="title">
+                           {/*{selectMovies ? selectMovies.map(movie => (*/}
+                           <option value="">Filter By Provider</option>
+                           {provider ? provider.map(a => (
+                               <option value="">{a}</option>
+                           )) : null}
+                           {/*)): null}*/}
+                       </Form.Control>
+                       {/*</Form.Group>*/}
+                   </Form>
+                   <Form style={{width: '25%', padding: '2%'}}>
+                       {/*<Form.Group controlId="exampleForm.SelectCustomSizeLg">*/}
+                       <Form.Control as="select" size="lg" custom
+                           // onChange={}
+                                     name="title">
+                           {/*{selectMovies ? selectMovies.map(movie => (*/}
+                           <option value="">Filter By Author</option>
+                           {authors ? authors.map(a => (
+                               <option value="">{a}</option>
+                           )) : null}
+                           {/*)): null}*/}
+                       </Form.Control>
+                       {/*</Form.Group>*/}
+                   </Form>
+               </div>
+
                <div style={{display: 'flex', width: '100%'}}>
                    <CardDeck>
                        {displayCourses()}
